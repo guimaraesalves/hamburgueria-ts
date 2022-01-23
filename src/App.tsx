@@ -1,11 +1,14 @@
-//import {Routes} from "./routes";
+//import React from "react";
+import "./App.css";
+import Routes from "./routes";
 
 function App() {
   return (
-    <>
-      {/* <Routes /> */}
-      <h1>Olá Mundo!</h1>
-    </>
+    <div className="App">
+      <header className="App-header">
+        <Routes />
+      </header>
+    </div>
   );
 }
 

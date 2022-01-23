@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "email": "joao.silva@mail.com",
+      "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
+      "name": "João da Silva",
+      "role": "administrador",
+      "id": 1
+    },
+    {
+      "name": "Meu",
+      "email": "meu@email.com",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "id": 2
+    },
+    {
+      "name": "maria",
+      "email": "maria@email.com",
+      "password": "12345678",
+      "confirmPassword": "12345678",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "title": "Hamburguer",
+      "category": "Sanduíches",
+      "price": 14,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "title": "X-Burguer",
+      "category": "Sanduíches",
+      "price": 16,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "title": "Big Kenzie",
+      "category": "Sanduíches",
+      "price": 18,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "title": "Combo Kenzie",
+      "category": "Combos",
+      "price": 22,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "title": "Fanta Guaraná",
+      "category": "Bebidas",
+      "price": 5,
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "title": "Coca-Cola",
+      "category": "Bebidas",
+      "price": 7,
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "title": "KenzieShake",
+      "category": "Sobremesas",
+      "price": 10,
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "title": "KenzieSundae",
+      "category": "Sobremesas",
+      "price": 10,
+      "userId": 1,
+      "id": 8
+    }
+  ],
+  "carts": []
+}
