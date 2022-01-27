@@ -38,7 +38,7 @@ const CartList = ({ productsCart, isInTheCart = false }: CartListProps) => {
           })}
         </p>
       </div>
-      <Button variant="contained" color="default" onClick={cleanCart}>
+      <Button variant="contained" style={{color:"green"}} onClick={cleanCart}>
         Remover Todos
       </Button>
     </>

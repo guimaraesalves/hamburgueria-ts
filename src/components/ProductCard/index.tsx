@@ -11,7 +11,7 @@ interface ProductCardProps {
   isInTheCart?: boolean;
 }
 
-const ProductCard = ({ product, isInTheCart = false }: ProductCardProps) => {
+function ProductCard({ product, isInTheCart = false }: ProductCardProps) {
   const { image, name, category, price, id } = product;
   const { addProduct, deleteProduct, totalSale, updateTotalSale } = useCart();
   const { userId } = useAuth();
@@ -37,10 +37,11 @@ const ProductCard = ({ product, isInTheCart = false }: ProductCardProps) => {
       <img src={image} alt={name} width="200" height="200" />
       <Typography variant="subtitle1">{name}</Typography>
       <Typography variant="subtitle1">{category}</Typography>
-      <Typography variant="h6" color="primary">
+      <Typography variant="h6" style={{color:"#168821"}}>
         {price.toLocaleString("pt-BR", {
           style: "currency",
           currency: "BRL",
+          
         })}
       </Typography>
       {isInTheCart ? (
@@ -77,12 +78,19 @@ const ProductCard = ({ product, isInTheCart = false }: ProductCardProps) => {
           </ButtonGroup>
         </>
       ) : (
-        <Button variant="contained" color="primary" onClick={handleAddProduct}>
+        <Button
+          variant="contained"
+          style={{
+            color: "white",
+            background: "#168821",
+          }}
+          onClick={handleAddProduct}
+        >
           Adicionar no Carrinho
         </Button>
       )}
     </Paper>
   );
-};
+}
 
 export default ProductCard;

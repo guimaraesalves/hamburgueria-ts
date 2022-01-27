@@ -5,7 +5,7 @@ import {
     useEffect,
     ReactNode,
   } from "react";
-  import api from "../../services";
+  import api from "../../services/index";
   import { IProduct } from "../../types/types";
   
   interface ProductsProviderProps {
@@ -26,9 +26,9 @@ import {
   
     const getProducts = () => {
       api
-        .get("products")
+        .get("/products")
         .then((response) => {
-          setProducts([...products, ...response.data]);
+          setProducts(response.data);
         })
         .catch((error) => console.log(error));
     };

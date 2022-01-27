@@ -15,15 +15,17 @@ interface AuthProviderData {
   Logout: (history: History) => void;
 }
 
+
+
 const AuthContext = createContext<AuthProviderData>({} as AuthProviderData);
 
 export const AuthProvider = ({ children }: AuthProviderProps) => {
   const [authToken, setAuthToken] = useState(
-    () => localStorage.getItem("@HamburgueriaKenzie:token") || ""
+    () => localStorage.getItem("@hambKenzie:token") || ""
   );
 
   const [userId, setUserId] = useState(
-    () => localStorage.getItem("@HamburgueriaKenzie:userId") || ""
+    () => localStorage.getItem("@hambKenzie:userId") || ""
   );
 
   const SignUp = (userData: IUserDataSignUp, history: History) => {
@@ -39,20 +41,13 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     api
       .post("login", userData)
       .then((response) => {
-        localStorage.setItem(
-          "@HamburgueriaKenzie:token",
-          response.data.accessToken
-        );
-        localStorage.setItem(
-          "@HamburgueriaKenzie:userId",
-          response.data.user.id
-        );
+        localStorage.setItem("@hambKenzie:token", response.data.accessToken);
+        localStorage.setItem("@hambKenzie:userId", response.data.user.id);
         setAuthToken(response.data.accessToken);
         setUserId(response.data.user.id);
         history.push("/home");
-        window.location.reload();
-      })
-      .catch((err) => console.log(err));
+        
+      }).catch((err) => console.log(err));
   };
 
   const Logout = (history: History) => {

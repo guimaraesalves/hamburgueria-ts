@@ -30,7 +30,7 @@ import {
     const [cart, setCart] = useState<IProduct[]>([] as IProduct[]);
   
     const [cartToken] = useState(
-      () => localStorage.getItem("@HamburgueriaKenzie:token") || ""
+      () => localStorage.getItem("@hambKenzie:token") || ""
     );
   
     const [cartTotal, setCartTotal] = useState(0);

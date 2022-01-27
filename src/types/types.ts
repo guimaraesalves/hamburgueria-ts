@@ -14,6 +14,7 @@ export interface IProduct {
     confirmPassword: string;
   }
   
+  
   export interface IUserDataSignIn {
     email: string;
     password: string;

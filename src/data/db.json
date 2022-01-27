@@ -1,82 +1,60 @@
 {
-  "users": [
-    {
-      "email": "joao.silva@mail.com",
-      "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
-      "name": "João da Silva",
-      "role": "administrador",
-      "id": 1
-    },
-    {
-      "name": "Meu",
-      "email": "meu@email.com",
-      "password": "12345678",
-      "confirmPassword": "12345678",
-      "id": 2
-    },
-    {
-      "name": "maria",
-      "email": "maria@email.com",
-      "password": "12345678",
-      "confirmPassword": "12345678",
-      "id": 3
-    }
-  ],
+  "users": [],
   "products": [
     {
-      "title": "Hamburguer",
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLVzsMug4UtoDzPlo-kCV8xuZChu2NnL05EZUbAnQZn9pPIWflNblkj_j26ANTyzN8gtdEC9PBuGm96NP2eVXtCeuRDrT4HG7HZj5GvhUbCjBNGz9RyL0D2zT_lFis8u1lMw9P582mxFV80jtOKiG-bW=w158-h150-no?authuser=0",
+      "name": "Big Kenzie",
       "category": "Sanduíches",
-      "price": 14,
-      "userId": 1,
+      "price": 19.99,
       "id": 1
     },
     {
-      "title": "X-Burguer",
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLWCvLcj48eToZuoLpJH6tI40XkZ6sEy70X0sn5xr2veJJio9AbS75a6Ll4jeixtwfuBtAsiRrB6hZxGC1y00Ru2SlUN9iUYwC618z5V4irkPYETn7G7P-EhCYOcHYO9P1pm917Vl6JPVzLvyPZ792sD=s162-no?authuser=0",
+      "name": "X-Burguer",
       "category": "Sanduíches",
-      "price": 16,
-      "userId": 1,
+      "price": 10.99,
       "id": 2
     },
     {
-      "title": "Big Kenzie",
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLWF8mTqijbuKflKozJH2oGJoJZ17zNuXmAGyxM6PC89j42q8-fKZxNcB0kPwpj3jjk17_VIhFXoEjrQ8nlZULhycfdpANt_nYTn3cATg9iAr5YSIzzEViSrTceBbtokyRquqN-0c-Ud3_GmgoMsa2df=w177-h162-no?authuser=0",
+      "name": "X-Chicken",
       "category": "Sanduíches",
-      "price": 18,
-      "userId": 1,
+      "price": 14.99,
       "id": 3
     },
     {
-      "title": "Combo Kenzie",
-      "category": "Combos",
-      "price": 22,
-      "userId": 1,
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLX_z8CJ-gjv7Zq-Ncql8Z_jQ1CdJ0_BX_A2CF8vthQ5WfIGJtHXsbuPIJzxFsIpqQdXum__foayg48ey8URMdEzr7E0qNkcHi4vDcX7WE_pt7ktiS2anREaBff5GVpWRMXCOtK076XaAKBX0LwGva9L=w170-h150-no?authuser=0",
+      "name": "Combo Kenzie",
+      "category": "Sanduíches",
+      "price": 20.99,
       "id": 4
     },
     {
-      "title": "Fanta Guaraná",
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLUQjqBgtLWQ-DFrfUU4k4ETdIDZiAjsNyWdLKkBH85fC9DxgWNgkDPxaKWSpZQ_XpQVhnAe5RuZqkpL08cJB-HGIurhorD8z5kSNrM1Hb_5a3IZbNrOR2mnEwC-WYo20w3weckbStxt3TO-EuK0zSrn=w247-h167-no?authuser=0",
+      "name": "Fanta Guaraná",
       "category": "Bebidas",
-      "price": 5,
-      "userId": 1,
+      "price": 5.99,
       "id": 5
     },
     {
-      "title": "Coca-Cola",
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLU-KdfLBqnfV-ZZzQzrX-7PpvwMqCZ0AG_6TebhiFCDlBRS8yV4j0YWGYjUUwg_fgVcrd9sFfzDtTB3h3029j_4yH4-4Jrylhns4Cap9ALT2aKBOej7s9q9Xd_YECuaaLfWfQlSFOfLRgqWvQaeiOiL=w247-h172-no?authuser=0",
+      "name": "Coca Cola",
       "category": "Bebidas",
-      "price": 7,
-      "userId": 1,
+      "price": 6.99,
       "id": 6
     },
     {
-      "title": "KenzieShake",
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLWF4LPVhA1pLUxp_FOL8wp5WaDXVjL5_JBHbuHLyiEx1XjzE5T8EJs5B0KoiXZPVdNn2gCwSjeaXH5T8O27cR7EWXivdoe1QQQymspuHyZCfyC6oJG8ZA9h6yhWr0Pr6TVf_X86K4kf37-wvgxpIWdN=w162-h144-no?authuser=0",
+      "name": "McShake Ovomaltine",
       "category": "Sobremesas",
-      "price": 10,
-      "userId": 1,
+      "price": 18.0,
       "id": 7
     },
     {
-      "title": "KenzieSundae",
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLV8CReP_8yXBE5tBqOunyxws5O6zlRq3Mky8Pn8KUT2mdsrgM5q3U6Zu9dAV5DOghKVAXbZrjF4Sd9nXoYSXd-Eh2_2DTNlTmSBhbf7k-rcOL7s9phSpPpCpQNIsakosg9WvxsfHMh6WeXLN-_Pyt63=s140-no?authuser=0",
+      "name": "Sundae Chocolate",
       "category": "Sobremesas",
-      "price": 10,
-      "userId": 1,
+      "price": 12.99,
       "id": 8
     }
   ],
