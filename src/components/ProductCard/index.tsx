@@ -32,29 +32,32 @@ function ProductCard({ product, isInTheCart = false }: ProductCardProps) {
   return (
     <Paper
       elevation={5}
-      style={{ width: "300px", height: "370px", margin: "10px" }}
+      style={{ width: "300px", height: "400px", margin: "10px" }}
     >
       <img src={image} alt={name} width="200" height="200" />
-      <Typography variant="subtitle1">{name}</Typography>
+      <Typography variant="h4">{name}</Typography>
       <Typography variant="subtitle1">{category}</Typography>
-      <Typography variant="h6" style={{color:"#168821"}}>
+      <Typography variant="h6" style={{ color: "#168821" }}>
         {price.toLocaleString("pt-BR", {
           style: "currency",
           currency: "BRL",
-          
         })}
       </Typography>
       {isInTheCart ? (
         <>
           <Button
             variant="contained"
-            color="secondary"
             onClick={handleDeleteProduct}
+            style={{
+              color: "#ffff",
+              marginBottom: "20px",
+              backgroundColor: "brown",
+            }}
           >
             Remover do Carrinho
           </Button>
 
-          <ButtonGroup>
+          <ButtonGroup size="small" aria-label="small button group">
             <Button
               aria-label="reduce"
               onClick={() => {
