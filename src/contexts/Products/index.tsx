@@ -6,7 +6,16 @@ import {
     ReactNode,
   } from "react";
   import api from "../../services/index";
-  import { IProduct } from "../../types/types";
+ 
+
+  export interface IProduct {
+    image: string;
+    name: string;
+    category: string;
+    price: number;
+    id: number;
+    userId: number;
+  }
   
   interface ProductsProviderProps {
     children: ReactNode;

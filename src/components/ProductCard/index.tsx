@@ -4,7 +4,16 @@ import { useState } from "react";
 
 import { useAuth } from "../../contexts/Auth";
 import { useCart } from "../../contexts/Cart";
-import { IProduct } from "../../types/types";
+
+
+interface IProduct {
+  image: string;
+  name: string;
+  category: string;
+  price: number;
+  id: number;
+  userId: number;
+}
 
 interface ProductCardProps {
   product: IProduct;
@@ -25,6 +34,7 @@ function ProductCard({ product, isInTheCart = false }: ProductCardProps) {
   };
 
   const handleDeleteProduct = () => {
+    product["userId"] = Number(userId);
     deleteProduct(id);
     totalSale(-price);
   };

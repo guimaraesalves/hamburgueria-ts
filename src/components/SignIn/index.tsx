@@ -12,7 +12,15 @@ import {
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { useAuth } from "../../contexts/Auth";
-import { IUserDataSignIn } from "../../types/types";
+
+
+
+
+
+interface IUserDataSignIn {
+  email: string;
+  password: string;
+}
 
 const SignIn = () => {
   const history = useHistory();
@@ -88,7 +96,7 @@ const SignIn = () => {
             size="large"
             color="primary"
             variant="contained"
-            
+            onClick={() => history.push("/home")}
           >
             Entrar
           </Button>

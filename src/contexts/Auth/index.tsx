@@ -1,7 +1,19 @@
 import { createContext, useContext, useState, ReactNode } from "react";
-import { IUserDataSignIn, IUserDataSignUp } from "../../types/types";
+
 import { History } from "history";
 import api from "../../services/index";
+
+interface IUserDataSignIn {
+  email: string;
+  password: string;
+}
+
+interface IUserDataSignUp {
+  name: string;
+  email: string;
+  password: string;
+  confirmPassword: string;
+}
 
 interface AuthProviderProps {
   children: ReactNode;
@@ -14,8 +26,6 @@ interface AuthProviderData {
   SignIn: (userData: IUserDataSignIn, history: History) => void;
   Logout: (history: History) => void;
 }
-
-
 
 const AuthContext = createContext<AuthProviderData>({} as AuthProviderData);
 
@@ -46,8 +56,8 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
         setAuthToken(response.data.accessToken);
         setUserId(response.data.user.id);
         history.push("/home");
-        
-      }).catch((err) => console.log(err));
+      })
+      .catch((err) => console.log(err));
   };
 
   const Logout = (history: History) => {

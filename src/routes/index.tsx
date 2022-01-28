@@ -3,7 +3,7 @@ import Cart from "../pages/Cart";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 
-import { Route, Switch} from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { useAuth } from "../contexts/Auth";
 
 interface RouteProps {

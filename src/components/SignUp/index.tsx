@@ -13,7 +13,14 @@ import {
 import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { useAuth } from "../../contexts/Auth";
-import { IUserDataSignUp } from "../../types/types";
+
+
+interface IUserDataSignUp {
+  name: string;
+  email: string;
+  password: string;
+  confirmPassword: string;
+}
 
 const SignUp = () => {
   const history = useHistory();
